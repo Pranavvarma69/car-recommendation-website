@@ -1,0 +1,42 @@
+.home-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-bar select,
+.filter-bar input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-bar select:focus,
+.filter-bar input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+}
+
+.filter-bar select {
+    background-color: white;
+    cursor: pointer;
+}
+
+.filter-bar input {
+    width: 150px;
+}
+
+@media (max-width: 600px) {
+    .filter-bar input {
+        width: 100px;
+    }
+}
